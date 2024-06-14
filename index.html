@@ -59,8 +59,8 @@
             audio.play();
         }
         
-        document.getElementById('continue-button').onclick = function() {
-            document.getElementById('overlay').style.display = 'none';
+        document.getElementById('continueButton').addEventListener('click', function() {
+            document.querySelector('.overlay').style.display = 'none';
         }
     </script>
 </body>
