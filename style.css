@@ -47,15 +47,16 @@
     padding: 10px 20px;
     font-size: 18px;
     border: none;
-    background: #007BFF;
-    color: white;
+    background: rgba(240, 240, 240, 0.5); /* Transparent grey-white */
+    color: black; /* Change text color */
     border-radius: 16px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .overlay-content button:hover {
-    background: #0056b3;
+    background: rgba(180, 180, 180, 0.7); /* Darker grey on hover */
+    color: white; /* Change text color on hover */
 }
 
 .box-area {
