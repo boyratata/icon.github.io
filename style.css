@@ -59,70 +59,78 @@
 }
 
 .box-area {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
+
 .box-area li {
-	position: absolute;
-	display: block;
-	list-style: none;
-	width: 25px;
-	height: 25px;
-	background: rgba(255, 255, 255, 0.05);
-	animation: animate 20s linear infinite;
-	bottom: -150px;
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
 }
+
 .box-area li:nth-child(1) {
-	left: 86%;
-	width: 80px;
-	height: 80px;
-	animation-delay: 0s;
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
 }
+
 .box-area li:nth-child(2) {
-	left: 12%;
-	width: 30px;
-	height: 30px;
-	animation-delay: 1.5s;
-	animation-duration: 10s;
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
 }
+
 .box-area li:nth-child(3) {
-	left: 70%;
-	width: 100px;
-	height: 100px;
-	animation-delay: 5.5s;
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
 }
+
 .box-area li:nth-child(4) {
-	left: 42%;
-	width: 150px;
-	height: 150px;
-	animation-delay: 0s;
-	animation-duration: 15s;
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
 }
+
 .box-area li:nth-child(5) {
-	left: 65%;
-	width: 40px;
-	height: 40px;
-	animation-delay: 0s;
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
 }
+
 .box-area li:nth-child(6) {
-	left: 15%;
-	width: 110px;
-	height: 110px;
-	animation-delay: 3.5s;
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
 }
+
 @keyframes animate {
-	0% {
-		transform: translateY(0) rotate(0deg);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(-800px) rotate(360deg);
-		opacity: 0;
-	}
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 .container h1 {
@@ -156,20 +164,20 @@
     animation-iteration-count: infinite;  
     transform-origin: 70% 70%;       
     display: inline-block;
-  }
+}
   
-  @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  
     100% { transform: rotate( 0.0deg) }
-  }
-  
-  .container #tiktok {
+}
+
+.container #tiktok {
     color: white;
     font-size: 45px;
     position: absolute;
@@ -177,14 +185,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition-duration: 0.3s;
-   }
+}
 
-   .container #tiktok:hover {
+.container #tiktok:hover {
     font-size: 55px;
-  }
+}
 
-
-  .container #twitter {
+.container #twitter {
     color: white;
     font-size: 45px;
     position: absolute;
@@ -192,13 +199,13 @@
     left: 40%;
     transform: translate(-50%, -50%);
     transition-duration: 0.3s;
-  }
+}
 
-  .container #twitter:hover {
+.container #twitter:hover {
     font-size: 55px;
-  }
+}
 
-  .container #youtube {
+.container #youtube {
     color: white;
     font-size: 45px;
     position: absolute;
@@ -206,13 +213,13 @@
     left: 30%;
     transform: translate(-50%, -50%);
     transition-duration: 0.3s;
-  }
+}
 
-  .container #youtube:hover {
+.container #youtube:hover {
     font-size: 55px;
-  }
+}
 
-  .container #discord {
+.container #discord {
     color: white;
     font-size: 45px;
     position: absolute;
@@ -220,13 +227,13 @@
     left: 60%;
     transform: translate(-50%, -50%);
     transition-duration: 0.3s;
-  }
+}
 
-  .container #discord:hover {
+.container #discord:hover {
     font-size: 55px;
-  }
+}
 
-  .container #github {
+.container #github {
     color: white;
     font-size: 45px;
     position: absolute;
@@ -234,13 +241,13 @@
     left: 70%;
     transform: translate(-50%, -50%);
     transition-duration: 0.3s;
-  }
+}
 
-  .container #github:hover {
+.container #github:hover {
     font-size: 55px;
-  }
+}
 
-  .notification {
+.notification {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -254,14 +261,13 @@
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }
+}
 
-  .notification.show {
-       opacity: 1;
-  }
+.notification.show {
+    opacity: 1;
+}
 
-  
-  .glass {
+.glass {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -277,5 +283,5 @@
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(5px);
     -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09); 
-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09);
+    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.09);
 }
