@@ -57,7 +57,9 @@
             document.getElementById('overlay').style.display = 'none';
             var audio = new Audio('3s/audio.mp3');
             audio.loop = true;
-            audio.play();
+            audio.play().catch(function(error) {
+                console.error('Failed to play audio:', error);
+            });
         };
     </script>
 </body>
