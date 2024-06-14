@@ -55,12 +55,10 @@
 
         document.getElementById('continue-button').onclick = function() {
             document.getElementById('overlay').style.display = 'none';
+            var audio = new Audio('3s/audio.mp3');
+            audio.loop = true;
+            audio.play();
         };
     </script>
-
-    <audio autoplay loop>
-        <source src="3s/audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 </body>
 </html>
