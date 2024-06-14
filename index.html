@@ -19,38 +19,49 @@
     <title>reborn bio | reborn x3</title>
 </head>
 <body>
-   <div class="container">
-    <ul class="box-area">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <div class="glass">
-        <h1>admin0.</h1>
-        <a href="https://discord.com/users/1218777412364406906" target="_blank"><i id="discord" class="fa-brands fa-discord"></i></a>
-        <a href="https://www.youtube.com/channel/UCcZyY3b9iWqJuH2rMyTVpfw" target="_blank"><i id="youtube" class="fa-brands fa-youtube"></i></a>
-        <a href="https://twitter.com/KaraokeYuki" target="_blank"><i id="twitter" class="fa-brands fa-twitter"></i></a>
-        <a href="https://github.com/boyratata" target="_blank"><i id="github" class="fa-brands fa-github"></i></a>
-        <p><span class="wave">👋</span> hello, I'm Admin, <span class="auto-type"></span></p>
+    <div class="container">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="glass">
+            <h1>admin0.</h1>
+            <a href="https://discord.com/users/1218777412364406906" target="_blank"><i id="discord" class="fa-brands fa-discord"></i></a>
+            <a href="https://www.youtube.com/channel/UCcZyY3b9iWqJuH2rMyTVpfw" target="_blank"><i id="youtube" class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/KaraokeYuki" target="_blank"><i id="twitter" class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/boyratata" target="_blank"><i id="github" class="fa-brands fa-github"></i></a>
+            <p><span class="wave">👋</span> hello, I'm Admin, <span class="auto-type"></span></p>
+        </div>
     </div>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <p>Welcome to the site!</p>
+            <button id="continue-button">Continue</button>
+        </div>
     </div>
     
     <audio id="welcome-audio" src="3s/welcome.mp3" type="audio/mpeg"></audio>
 
     <script>
         var typed = new Typed(".auto-type",{
-          strings : ["the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "black one"],
-          typeSpeed : 150,
-          backSpeed : 100,
-          looped : true
+            strings : ["the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "black one"],
+            typeSpeed : 150,
+            backSpeed : 100,
+            looped : true
         });
         
         window.onload = function() {
             var audio = document.getElementById('welcome-audio');
             audio.play();
+        }
+        
+        document.getElementById('continue-button').onclick = function() {
+            document.getElementById('overlay').style.display = 'none';
         }
     </script>
 </body>
