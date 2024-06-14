@@ -36,7 +36,7 @@
             <p><span class="wave">👋</span> hello, I'm Admin, <span class="auto-type"></span></p>
         </div>
     </div>
-
+    
     <div class="overlay" id="overlay">
         <div class="overlay-content">
             <p>Welcome to the site!</p>
@@ -44,23 +44,24 @@
         </div>
     </div>
     
-    <audio id="welcome-audio" autoplay loop>
-        <source src="3s/welcome.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <audio id="welcome-audio" src="3s/welcome.mp3" type="audio/mpeg"></audio>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "black one"],
-            typeSpeed: 150,
-            backSpeed: 100,
-            loop: true
+        var typed = new Typed(".auto-type",{
+            strings : ["the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "THE lier", "the dumb one", "i like foot & your mom", "black one"],
+            typeSpeed : 150,
+            backSpeed : 100,
+            looped : true
         });
-
+        
+        window.onload = function() {
+            var audio = document.getElementById('welcome-audio');
+            audio.play();
+        }
+        
         document.getElementById('continue-button').onclick = function() {
             document.getElementById('overlay').style.display = 'none';
-        };
+        }
     </script>
 </body>
 </html>
