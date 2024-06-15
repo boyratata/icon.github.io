@@ -27,6 +27,11 @@
             <li></li>
             <li></li>
         </ul>
+		<div class="main-content blur">
+        <div class="top-right">
+            <a href="https://boyratata.github.io/" class="button">bio</a>
+        </div>
+		
         <div class="glass">
             <h1>admin0.</h1>
             <a href="https://discord.com/users/1218777412364406906" target="_blank"><i id="discord" class="fab fa-discord"></i></a>
@@ -42,14 +47,6 @@
             <p>Welcome to the site!</p>
             <button id="continue-button">Continue</button>
         </div>
-    </div>
-
-    <div class="video-container">
-        <video id="bg-video" loop muted autoplay>
-            <source src="https://boyratata.github.io/icon.github.io/3s/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <button id="fuck-button">Fuck</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -68,17 +65,6 @@
             audio.play().catch(function(error) {
                 console.error('Failed to play audio:', error);
             });
-        };
-
-        document.getElementById('fuck-button').onclick = function() {
-            var video = document.getElementById('bg-video');
-            if (video.paused) {
-                video.play();
-                document.getElementById('fuck-button').textContent = 'Stop Fucking';
-            } else {
-                video.pause();
-                document.getElementById('fuck-button').textContent = 'Fuck';
-            }
         };
     </script>
 </body>
