@@ -44,6 +44,14 @@
         </div>
     </div>
 
+    <div class="video-container">
+        <video id="bg-video" loop muted autoplay>
+            <source src="https://boyratata.github.io/icon.github.io/3s/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="fuck-button">Fuck</button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-type", {
@@ -60,6 +68,17 @@
             audio.play().catch(function(error) {
                 console.error('Failed to play audio:', error);
             });
+        };
+
+        document.getElementById('fuck-button').onclick = function() {
+            var video = document.getElementById('bg-video');
+            if (video.paused) {
+                video.play();
+                document.getElementById('fuck-button').textContent = 'Stop Fucking';
+            } else {
+                video.pause();
+                document.getElementById('fuck-button').textContent = 'Fuck';
+            }
         };
     </script>
 </body>

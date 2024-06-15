@@ -13,6 +13,37 @@
     align-items: center;
 }
 
+.top-right {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.17);
+  color: rgb(199, 197, 197);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
 .overlay {
     position: fixed;
     top: 0;
